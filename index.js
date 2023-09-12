@@ -1,8 +1,18 @@
+const express=require("express");
 
+const app=express();
 
+app.set('view engine','ejs');
 
-
-
+app.get('/profile',(_,res)=>{
+    // const user={
+    //     name:'niraj singh',
+    //     email:'niraj@gmail.com',
+    //     city:'bokaro'
+    // }
+    res.render('profile');
+})
+app.listen(4000);
 
 
 
