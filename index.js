@@ -1,18 +1,89 @@
-const express=require("express");
 
-const app=express();
 
-app.set('view engine','ejs');
 
-app.get('/profile',(_,res)=>{
-    // const user={
-    //     name:'niraj singh',
-    //     email:'niraj@gmail.com',
-    //     city:'bokaro'
-    // }
-    res.render('profile');
-})
-app.listen(4000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Apllication level middelware 
+
+// const express=require('express');
+// const app=express();
+
+// const reqfilter=(req,res,next)=>{
+//     if(!req.query.age){
+//         res.send('please provide age')
+//     }else if(req.query.age<18){
+//         res.send('yors are under age')
+//     }else{
+//         next();
+//     }
+// }
+
+// app.use(reqfilter);
+
+// app.get('/',(req,res)=>{
+//     res.send('welcome to home page')
+// })
+// app.get('/user',(req,res)=>{
+//     res.send('welcomw to user page')
+// })
+// app.listen(5000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const express=require("express");
+
+// const app=express();
+
+// app.set('view engine','ejs');
+
+// app.get('/profile',(_,res)=>{
+//     const user={
+//         name:'niraj singh',
+//         email:'niraj@gmail.com',
+//         city:'bokaro'
+//     }
+//     res.render('profile',{user});
+// })
+// app.get('/login',(_,res)=>{
+//     res.render('login')
+// })
+// app.get('/blog', (_, res) => {
+//     res.render('blog')
+// })
+// app.listen(4000);
 
 
 
